@@ -1,0 +1,14 @@
+services:
+  mysql_prog:
+    image: mysql/mysql-server:8.0
+    container_name: mysql_prog
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3307:3306"
+    volumes:
+      - "./data/:/app/data/"
+      - "./docker-initdb/:/docker-entrypoint-initdb.d/"
+    command:
+      - "--skip-name-resolve"
