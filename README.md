@@ -34,3 +34,6 @@ the database contains all the data and is ready to accept connections and querie
 - If connection from python, terminal and/or MySQL Workbench/DBeaver takes too long (10+ seconds), it's probably DNS,
 change `localhost` to `127.0.0.1` in your connection parameters and it should be fine.
 **DON'T FORGET TO USE** `localhost` **IN THE CODE YOU SUBMIT, IT MUST BE THE SAME AS IN THE FORMAT**
+
+## Issues
+If you experience any issues and/or problems, please open an Issue [here](../../issues/new) or contact me personally.
